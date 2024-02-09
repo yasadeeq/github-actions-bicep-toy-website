@@ -1,6 +1,6 @@
 githubOrganizationName='yasadeeq'
-githubRepositoryName='toy-website-workflow'
-applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-workflow')
+githubRepositoryName='github-actions-bicep-toy-website'
+applicationRegistrationDetails=$(az ad app create --display-name 'github-actions-bicep-toy-website')
 applicationRegistrationObjectId=$(echo $applicationRegistrationDetails | jq -r '.id')
 applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
 
